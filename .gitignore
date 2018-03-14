@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
 ### Android template
+=======
+>>>>>>> 147291fbcd049c75bbcf046e6323cba8efbdad4b
 # Built application files
 *.apk
 *.ap_
 
+<<<<<<< HEAD
 # Files for the Dalvik VM
+=======
+# Files for the ART/Dalvik VM
+>>>>>>> 147291fbcd049c75bbcf046e6323cba8efbdad4b
 *.dex
 
 # Java class files
@@ -36,7 +43,28 @@ captures/
 
 # Intellij
 *.iml
+<<<<<<< HEAD
+=======
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/libraries
+>>>>>>> 147291fbcd049c75bbcf046e6323cba8efbdad4b
 
 # Keystore files
 *.jks
 
+<<<<<<< HEAD
+=======
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+>>>>>>> 147291fbcd049c75bbcf046e6323cba8efbdad4b
