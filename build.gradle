@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 23
     buildToolsVersion '26.0.2'
@@ -16,3 +17,18 @@ android {
         }
     }
 }
+
+tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+}
+
+publish {
+    userOrg = 'caoguoqiang'
+    groupId = 'org.ffmpeg.android'
+    artifactId = 'ffmpeglib'
+    publishVersion = '1.0'
+    desc = 'this is file operator tool ,but may not be apply for you'
+    website = 'git@github.com:caoguoqiang/ffmpeglib.git'
+}
+//gradlew clean build bintrayUpload -PbintrayUser=caoguoqiang -PbintrayKey=d1a420f93325ca8dbaff0807d0c555b4cda994c9 -PdryRun=false
